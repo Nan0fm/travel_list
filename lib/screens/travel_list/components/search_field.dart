@@ -36,6 +36,7 @@ class SearchField extends StatelessWidget {
           Icon(Icons.search),
           Expanded(
             child: TextField(
+              textAlignVertical: TextAlignVertical.center,
               onChanged: (value) {},
               decoration: InputDecoration(
                 border: InputBorder.none,
