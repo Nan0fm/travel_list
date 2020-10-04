@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_list/constants.dart';
 import 'package:travel_list/models/PlaceModel.dart';
+import 'package:travel_list/screens/components/info_view.dart';
 
 class SuggestedPlaces extends StatelessWidget {
   const SuggestedPlaces({
@@ -11,7 +12,7 @@ class SuggestedPlaces extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       clipBehavior: Clip.none,
-      padding: EdgeInsets.symmetric(horizontal: kDefaultPadding * 1.5),
+      padding: EdgeInsets.symmetric(horizontal: kDPadding * 1.5),
       scrollDirection: Axis.horizontal,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -58,18 +59,7 @@ class LittlePlaceCard extends StatelessWidget {
             SizedBox(
               height: 8,
             ),
-            Text(
-              place.placeName,
-              style:
-                  Theme.of(context).textTheme.headline6.copyWith(fontSize: 18),
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            Text(
-              place.description,
-              style: TextStyle(color: Colors.black38),
-            ),
+            InfoView(place: place),
           ],
         ),
       ),

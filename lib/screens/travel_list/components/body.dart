@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:travel_list/constants.dart';
 import 'package:travel_list/models/PlaceModel.dart';
-import 'package:travel_list/screens/travel_list/components/little_place_card.dart';
-import 'package:travel_list/screens/travel_list/components/main_place_card.dart';
-import 'package:travel_list/screens/travel_list/components/search_field.dart';
 
 import 'image_header.dart';
+import 'little_place_card.dart';
+import 'main_place_card.dart';
+import 'search_field.dart';
 import 'title_section.dart';
 
 class Body extends StatelessWidget {
@@ -33,11 +33,11 @@ class Body extends StatelessWidget {
           ),
           SizedBox(height: defaultPadding),
           TitleSection(title: "Best Places"),
-          SizedBox(height: kDefaultPadding),
+          SizedBox(height: kDPadding),
           MainPlaceCard(place: travelPlaces[2]),
-          SizedBox(height: kDefaultPadding),
+          SizedBox(height: kDPadding),
           SuggestedPlaces(),
-          SizedBox(height: kDefaultPadding),
+          SizedBox(height: kDPadding),
         ],
       ),
     );

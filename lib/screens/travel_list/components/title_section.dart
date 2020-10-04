@@ -12,7 +12,7 @@ class TitleSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: kDefaultPadding * 1.5),
+      padding: EdgeInsets.symmetric(horizontal: kDPadding * 1.5),
       child: Row(
         children: [
           Text(
